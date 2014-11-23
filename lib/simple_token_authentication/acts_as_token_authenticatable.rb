@@ -11,7 +11,7 @@ module SimpleTokenAuthentication
     included do
       public :generate_authentication_token
       private :token_suitable?
-      private :token_generator
+      public :token_generator
     end
 
     def ensure_authentication_token
